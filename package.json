@@ -1,0 +1,20 @@
+{
+  "name": "whbot-bridge",
+  "version": "1.0.0",
+  "description": "Node.js WhatsApp bridge for WHbot",
+  "private": true,
+  "main": "whatsapp_bridge.js",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "postinstall": "node ./scripts/postinstall.js && node ./scripts/patch-whatsapp-web.js",
+    "start": "node whatsapp_bridge.js"
+  },
+  "dependencies": {
+    "whatsapp-web.js": "^1.26.0"
+  },
+  "config": {
+    "puppeteer_skip_download": "true"
+  }
+}

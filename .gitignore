@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Node
+node_modules/
+npm-debug.log*
+
+# WhatsApp session (NEVER commit — contains your account credentials)
+.wwebjs_auth/
+.wwebjs_cache/
+
+# Runtime files
+session_owner.json
+whatsapp_bridge.js
+*.log
+
+# Secrets
+.env
+
+# OS
+.DS_Store
+Thumbs.db
